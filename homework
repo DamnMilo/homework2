@@ -1,0 +1,35 @@
+package Lesson1;
+
+import java.util.Arrays;
+
+public class Homework {
+    //ex1
+    public static void main(String[] args) {
+        int[] arr = {1,1,0,0,1,0,1,1,0,0};
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == 1) arr[i] = 0;
+            else arr[i] = 1;
+
+        }
+
+        //ex2
+        int[] arr2 = new int[8];
+        int j=0;
+        for(int i = 0; i < arr2.length; i++, j = j + 3) {
+            arr2[i] = j;
+        }
+
+
+        //ex3
+        int[] arr3 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        for (int i = 0; i < arr.length; i++) {
+            if (arr3[i] < 6 ) arr3[i] = arr3[i]*2;
+        }
+        //ex4
+        int n = 4;
+        int[][] array = new int[n][n];
+        for (int i = 0; i < n; i++) {
+            array[i][i] = 1;
+            array[i][n - i - 1] = 1;
+        }
+        //я еще не очень разбираюсь,нужно еще чуть чуть времени поэтрму и не все задания есть
